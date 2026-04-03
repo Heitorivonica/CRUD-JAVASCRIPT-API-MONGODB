@@ -64,3 +64,16 @@ Uma API é como um "garçom" que recebe pedidos (requisições) e traz respostas
 👉 Crie uma conta gratuita
 👉 Crie um cluster (leva 1-2 minutos)
 👉 Pegue a string de conexão (DATABASE_URL)
+
+# 4. Instalar e configurar o Prisma (ORM para conectar ao banco)
+👉 O Prisma é uma ferramenta que facilita a comunicação com o banco de dados
+👉 Ele gera queries automaticamente sem precisar escrever SQL
+# Instalar o Prisma
+npm install prisma --save-dev
+
+# Inicializar o Prisma no projeto
+npx prisma init
+
+# Isso cria duas coisas:
+# - pasta prisma/ com arquivo schema.prisma (onde definimos os modelos)
+# - arquivo .env (onde colocamos a DATABASE_URL)
